@@ -1,0 +1,48 @@
+1. Explain how to build stateful class components.
+
+First you will need to make an export a class and extend component from React
+
+ ex. export default class app extends React.Component{}
+
+ within that you will need to plug in a constructor and super ex. constructor{ super()}
+
+ within constructo is where you declare your state with this.state.
+
+ after that you need a render and return ex render(){return()}.
+
+2. Describe the different phases of the component lifecycle.
+
+Mounting where the component is initially created.
+
+Updating when the state changes it will get re-rendered. Becareful during this part
+
+because if you are not careful you can create and infinite loop.
+
+UnMounting component gets deleted and cleared out.
+
+3. Demonstrate an understanding of class component lifecycle methods.
+
+the lifecycle starts with componentdidmount this is where you do your axios calls
+
+then it moves onto componentdidupdate this will update the state if it is changing from the componentdidmount
+
+after that componentwillunmount is called this is where the component goes to die.
+
+4. Define stateful logic. Stateful logic is code that uses state. The use of state
+makes code reusable.
+
+5. Describe how to test a React component with React Testing Library.
+
+First you will need to install a testing library we are using Jest now.
+
+you will then need to add the test script.
+
+start the test script
+
+at something we can test
+
+after that you create a test js file ex checkoutform.test.js.
+
+import the file you want to use
+
+you will need to import components from @testing-library/react.
